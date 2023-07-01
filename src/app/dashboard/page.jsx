@@ -12,9 +12,10 @@ export default function Dashboard() {
   <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
   <div className="drawer-content flex flex-col m-5">
     {/* Page content here */}
-    <label htmlFor="my-drawer-2" className="btn btn-primary drawer-button lg:hidden">Open drawer</label>
+    
   <Navbar/>
   <Hero/>
+  <label htmlFor="my-drawer-2" className="link link-primary drawer-button lg:hidden">Open menu</label>
   </div> 
   <div className="drawer-side">
     <label htmlFor="my-drawer-2" className="drawer-overlay"></label> 

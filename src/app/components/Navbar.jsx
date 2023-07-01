@@ -6,14 +6,15 @@ import Menu from '../../../public/menu.png'
 export default function Navbar() {
   return (
 <div className="navbar flex flex-row bg-base-200 rounded-md">
-  <div className="sm:hidden">
+  
+  <div className="flex-1 sm:hidden">
     <Image
           src={Logo}
           alt="Logo"
           className='w-24'
           />
   </div>
-  <div className='flex-1'>
+  <div className='flex-1 hidden sm:block'>
     Workspace
   </div>
 
