@@ -1,10 +1,12 @@
-import Main from "./Home/page"
+//import Main from "./Home/page"
+import Dashboard from "./dashboard/page"
+
 
 export default function Home() {
   return (
   <main>
     <div>
-      <Main/>
+      <Dashboard/>
     </div>
   </main>
   )

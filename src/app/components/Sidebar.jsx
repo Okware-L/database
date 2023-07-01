@@ -20,7 +20,7 @@ const sidebar = () => {
      />
       </div>
       </div>
-<ul className="menu w-80 h-full ">
+<ul className="menu w-60 h-full ">
   <li className='mx-5'>
     <a>
         <Image
