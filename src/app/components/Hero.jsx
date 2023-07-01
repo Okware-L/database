@@ -16,7 +16,9 @@ export default function Hero() {
             <section className='p-5 items-stretch grid grid-row col-span-4'>
               <div>
                 <h3 className='leading-loose'>Current Tasks</h3>
-                <UniversityForm id={uniId} setUniId={setUniId}/>
+                <div>
+                  New
+                </div>
               </div>
               
               <div>

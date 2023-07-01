@@ -8,6 +8,7 @@ import Bell from '../../../public/bell.png'
 import Taskspng from '../../../public/tasks.png'
 import Dp from '../../../public/user.png'
 import Link from 'next/link'
+import Logo from '../../../public/logo.svg'
 
 
 export default function Dashboard() {
@@ -21,9 +22,19 @@ export default function Dashboard() {
         <Hero/>
   
   </div> 
-  <div className="drawer-side">
+  <div className="drawer-side bg-base-200">
     <label htmlFor="my-drawer-2" className="drawer-overlay"></label> 
-    <ul className="menu bg-base-200 w-80 h-full pt-9">
+    <div className='flex flex-row justify-center p-2'>
+      <div className="avatar w-32">
+     <Image
+     src={Logo}
+     alt='dp'
+     className=''
+     />
+      </div>
+    </div>
+    
+    <ul className="menu w-80 h-full ">
   <li className='mx-5'>
     <a>
         <Image

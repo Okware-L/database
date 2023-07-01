@@ -2,6 +2,7 @@
 
 import React, {useState} from 'react'
 import UniversityList from '@/app/components/UniversityList'
+import UniversityForm from '@/app/components/UniversityForm';
 
   export default function Tasks() {
 
@@ -13,6 +14,7 @@ import UniversityList from '@/app/components/UniversityList'
   }
   return (
     <div className='p-20'>
+        <UniversityForm id={uniId} setUniId={setUniId}/>
          <UniversityList getUniId={getUniIdHandler}/>
     </div>
   )
