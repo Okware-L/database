@@ -3,6 +3,7 @@ import Navbar from '../components/Navbar'
 import Hero from '../components/Hero'
 import Image from 'next/image'
 import Sidebar from '../components/Sidebar'
+import Next from '../../../public/next.png'
 
 
 export default function Dashboard() {
@@ -14,8 +15,15 @@ export default function Dashboard() {
     {/* Page content here */}
     
   <Navbar/>
+   <label htmlFor="my-drawer-2" className="drawer-button mt-5 lg:hidden">
+    <Image
+    src={Next}
+    alt='arrow'
+    className='w-5 h-5'
+    />
+   </label>
   <Hero/>
-  <label htmlFor="my-drawer-2" className="link link-primary drawer-button lg:hidden">Open menu</label>
+ 
   </div> 
   <div className="drawer-side">
     <label htmlFor="my-drawer-2" className="drawer-overlay"></label> 

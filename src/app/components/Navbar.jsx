@@ -2,16 +2,18 @@ import React from 'react'
 import Image from 'next/image'
 import Logo from '../../../public/logo.svg'
 import Menu from '../../../public/menu.png'
+import Dp from '../../../public/home.png'
+
 
 export default function Navbar() {
   return (
-<div className="navbar flex flex-row bg-base-200 rounded-md">
+<div className="navbar flex flex-row bg-base-200 rounded-xl mt-5">
   
   <div className="flex-1 sm:hidden">
     <Image
           src={Logo}
           alt="Logo"
-          className='w-24'
+          className='w-16'
           />
   </div>
   <div className='flex-1 hidden sm:block'>
@@ -20,11 +22,10 @@ export default function Navbar() {
 
     <div className="dropdown dropdown-end justify-items-end flex-none">
       <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
-        <div className="w-10 rounded-full">
+        <div className="w-7 rounded-full">
           <Image
-          src={Menu}
-          alt="Logo"
-          className="h-5 w-5"
+          src={Dp}
+          alt="dp"
           />
         </div>
       </label>
