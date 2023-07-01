@@ -1,7 +1,6 @@
 "use client"
 
 import React, {useState} from 'react'
-import UniversityForm from './UniversityForm'
 import Image from 'next/image'
 import dp from '../../../public/user.png'
 
