@@ -1,4 +1,4 @@
-import { universities } from "../../../firebase";
+import { universities } from "../firebase";
 
 import {
     collection,
