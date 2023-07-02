@@ -1,45 +1,29 @@
 "use client"
 
-import React, {useState, useContext, useEffect} from 'react'
-import { auth } from '../app/firebase'
+import { createContext, useContext } from "react";
+import { 
+    createUserWithEmailAndPassword,
+    signInWithEmailAndPassword,
+    signOut,
+    onAuthStateChanged
+} from 'firebase/auth'
+import {auth} from '../app/firebase'
 
+const UserContext = createContext()
 
+export const AuthContextProvider = ({children}) => {
 
-const AuthContext = React.createContext()
-
-
-export function useAuth() {
-        return useContext(AuthContext)
-    
-}
-
-
-export function AuthProvider({children}) {
-    const[currentUser, setCurrentUser] = useState()
-    const [loading, setLoading] = useState(true)
-
-
-function signup(email, password) {
-    return auth.createUserWithEmailAndPassword(email, password)
-}
-
-useEffect(() => {
-    const unsubscribe = auth.onAuthStateChanged(user => {
-    setCurrentUser(user)
-    setLoading(false)
-})
-
-return unsubscribe
-}, [])
-
-
-    const value = {
-        currentUser,
-        signup
+    const createUser = ( email, password) => {
+        return createUserWithEmailAndPassword(auth, email, password)
     }
-  return (
-    <AuthContext.Provider value={value}>
-        {!loading && children}
-    </AuthContext.Provider>
-  )
+
+    return (
+        <UserContext.Provider value={createUser}>
+            {children}
+        </UserContext.Provider>
+    )
 }
+
+export const  UserAuth = () => {
+    return useContext(UserContext)
+} 
