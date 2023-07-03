@@ -1,8 +1,7 @@
 "use client"
 
 import React, {useState} from 'react'
-import Image from 'next/image'
-import dp from '../../../public/user.png'
+
 
 
 export default function Hero() {
