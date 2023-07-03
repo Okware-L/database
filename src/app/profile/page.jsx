@@ -5,7 +5,7 @@ import { useDisconnect } from '@thirdweb-dev/react';
 import { useAddress } from "@thirdweb-dev/react";
 import { useRouter } from 'next/navigation';
 
-const profile = () => {
+const Profile = () => {
 
     const address = useAddress();
     const disconnect = useDisconnect();
@@ -28,4 +28,4 @@ const profile = () => {
   )
 }
 
-export default profile
+export default Profile
