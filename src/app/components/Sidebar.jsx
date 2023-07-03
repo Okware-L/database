@@ -42,7 +42,7 @@ const sidebar = () => {
     </a>
   </li>
   <li className='mx-5 my-3'>
-    <Link href='/dashboard/tasks'>
+    <Link href='/tasks'>
         <Image
         src= {Taskspng}
         alt=''
