@@ -52,14 +52,14 @@ const sidebar = () => {
     </Link>
   </li>
   <li className='mx-5 my-3'>
-    <a>
+    <Link href='/chat'>
         <Image
         src= {Chat}
         alt=''
         className="h-5 w-5"
         />
     Chat
-    </a>
+    </Link>
   </li>
   <li className='mx-5 my-3'>
     <a>
