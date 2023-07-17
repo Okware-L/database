@@ -1,7 +1,7 @@
 "use client"
 
 import React, {useEffect, useState} from 'react'
-import uniDataService from '../services/university.add'
+import uniDataService from '../app/services/university.add'
 
 
 

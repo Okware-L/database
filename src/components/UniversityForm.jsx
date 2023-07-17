@@ -1,7 +1,7 @@
 "use client"
 
 import React, {useState, useEffect} from 'react'
-import uniDataService from '../services/university.add'
+import uniDataService from '../app/services/university.add'
 import { Alert } from 'react-bootstrap';
 
 export default function UniversityForm({ id, setUniId }) {

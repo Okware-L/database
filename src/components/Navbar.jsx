@@ -2,12 +2,12 @@
 
 import React from 'react'
 import Image from 'next/image'
-import Logo from '../../../public/logo.svg'
-import Menu from '../../../public/menu.png'
-import Dp from '../../../public/home.png'
-import Chat from '../../../public/chat.png'
-import Bell from '../../../public/bell.png'
-import User from '../../../public/user.png'
+import Logo from '../../public/logo.svg'
+import Menu from '../../public/menu.png'
+//import Dp from '../../../public/home.png'
+import Chat from '../../public/chat.png'
+import Bell from '../../public/bell.png'
+import User from '../../public/user.png'
 import { ConnectWallet, useAddress } from '@thirdweb-dev/react'
 import Link from 'next/link'
 

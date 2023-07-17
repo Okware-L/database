@@ -1,8 +1,8 @@
 import React from 'react'
-import Navbar from '../components/Navbar'
-import Hero from '../components/Hero'
+import Navbar from '../../components/Navbar'
+import Hero from '../../components/Hero'
 import Image from 'next/image'
-import Sidebar from '../components/Sidebar'
+import Sidebar from '../../components/Sidebar'
 import User from '../../../public/user.png'
 import Next from '../../../public/next.png'
 
@@ -43,10 +43,10 @@ export default function Dashboard() {
   </div> 
   <div className="drawer-side">
     <label htmlFor="my-drawer-2" className="drawer-overlay"></label> 
-    <ul className="menu p-4 w-70 h-full bg-base-200 text-base-content">
+    <div>
       {/* Sidebar content here */}
       <Sidebar/>
-    </ul>
+    </div>
   
   </div>
 </div>
