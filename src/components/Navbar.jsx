@@ -28,10 +28,10 @@ export default function Navbar() {
           />
   </div>
   <div className='flex-1 hidden sm:block'>
-    Workspace
+    Welcome
   </div>
 
-  {address && (
+  
     <>
        {/**icons */} 
       <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
@@ -51,44 +51,9 @@ export default function Navbar() {
           />
         </div>      
       </label>
-
-       {/**last icon and dropdown */}
-  
-    {/**second  */}
-      <div className="dropdown dropdown-end sm:hidden hidden">
-      <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
-        <div className="w-10 rounded-full">
-          <Image
-          src={Menu}
-          alt="Logo"
-          className="h-5 w-5"
-          />
-        </div>
-      </label>
-      <ul tabIndex={0} className="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52">
-        <li>
-          <a className="justify-between">
-            Profile
-            <span className="badge">New</span>
-          </a>
-        </li>
-        <li><a>Settings</a></li>
-        <li><a>Logout</a></li>
-      </ul>
-    </div>
       </>
-  )}
-{!address ? (
-<ConnectWallet
-btnTitle='Sign In'
-theme='dark'
-className='!text-white !bg-gradient-to-r !from-blue-500 !via-blue-600 !to-blue-700 !hover:bg-gradient-to-br !focus:ring-4 !focus:outline-none !focus:ring-blue-300 !dark:focus:ring-blue-800 !shadow-lg !shadow-blue-500/50 !dark:shadow-lg !dark:shadow-blue-800/80 !font-medium !rounded-lg !text-xs !px-2 !py-2.5 !text-center !mr-2 !mb-2'
-dropdownPosition={{
-  align: 'center',
-  side: 'top',
-}}
-/>
-) : (
+
+
   <div className="dropdown dropdown-end justify-items-end flex flex-row">
   <label tabIndex={0} className="btn btn-ghost btn-circle avatar">      
     <div className="w-7 rounded-full">
@@ -101,7 +66,7 @@ dropdownPosition={{
     </div>       
   </label>
 </div>
-) }
+
 
 </div>
   )

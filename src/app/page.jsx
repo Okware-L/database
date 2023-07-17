@@ -1,15 +1,25 @@
-//import Main from "./Home/page"
-import { AuthProvider } from "@/context/AuthContext"
+"use client"
+
 import Dashboard from "./dashboard/page"
+import { ConnectWallet, useAddress } from '@thirdweb-dev/react'
+import SignIn from "./signin/page";
 
 
 
 export default function Home() {
+
+  const address = useAddress();
+
+  
   return (
   <main>
-    <div>
+    {!address ? (
+      <div className="">
+     <SignIn/>
+      </div>
+      ) : (
       <Dashboard/>
-    </div>
+      )}
   </main>
   )
 }

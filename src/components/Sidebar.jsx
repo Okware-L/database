@@ -6,7 +6,9 @@ import Comm from '../../public/diversity.png'
 import Market from '../../public/shopping-bag.png'
 import News from '../../public/newspaper.png'
 import Logo from '../../public/logo.svg'
+import Arch from '../../public/arch.jpg'
 import Link from 'next/link'
+
 
 const sidebar = () => {
   return (
@@ -18,7 +20,6 @@ const sidebar = () => {
      alt='Logo'
      className=''
      />
-     jm
     </div>
     </div>
     <input type="text" placeholder="Search" className="input input-bordered input-sm w-full max-w-xs" />
@@ -79,16 +80,26 @@ const sidebar = () => {
   <div className="divider"></div> 
   {/**Community  section */}
  <div>
-  <h2 className='font-bold'>My community</h2>
+  <h2 className='font-bold my-2'>Community</h2>
+  <div className='flex my-1 p-2'>
+    <Image
+    src= {Arch}
+    alt='pic'
+    className="h-8 w-8 rounded-full"
+    />
+    <div className='flex flex-col mx-4'>
+      <h2 className='text-xs font-bold'>Architecture Competition</h2>
+    </div>
+  </div>
   <div className='flex my-1 p-2'>
     <Image
     src= {Logo}
     alt='pic'
-    className="h-8 w-8"
+    className="h-8 w-8 rounded-full bg-slate-600 p-1"
     />
     <div className='flex flex-col mx-4'>
-      <h2>Title</h2>
-      <p>Description</p>
+      <h2 className='font-bold text-xs'>Investment Options</h2>
+      <p className='text-xs'>#explore</p>
     </div>
   </div>
   <div className='flex my-1 p-2'>
@@ -98,30 +109,19 @@ const sidebar = () => {
     className="h-8 w-8"
     />
     <div className='flex flex-col mx-4'>
-      <h2>Title</h2>
-      <p>Description</p>
+      <h2 className='text-xs font-bold'>About jmqafri</h2>
+      <p className='text-xs'>#explore</p>
     </div>
   </div>
   <div className='flex my-1 p-2'>
     <Image
-    src= {Logo}
+    src= {Market}
     alt='pic'
     className="h-8 w-8"
     />
     <div className='flex flex-col mx-4'>
-      <h2>Title</h2>
-      <p>Description</p>
-    </div>
-  </div>
-  <div className='flex my-1 p-2'>
-    <Image
-    src= {Logo}
-    alt='pic'
-    className="h-8 w-8"
-    />
-    <div className='flex flex-col mx-4'>
-      <h2>Title</h2>
-      <p>Description</p>
+      <h2 className='text-xs font-bold'>Jobs & Careers</h2>
+      <p className='text-xs'>#explore</p>
     </div>
   </div>
 
@@ -149,20 +149,7 @@ const sidebar = () => {
 
 
   {/**second event */}
-  <div className='flex p-2'>
-   <div className='flex flex-col bg-base-100 p-3 rounded-full'>
-      <p className='ml-1'>
-        20
-      </p>
-      <p>
-        Dec
-      </p>
-   </div>
-    <div className='flex flex-col mx-4 justify-center'>
-      <h2>Title</h2>
-      <p>Description</p>
-    </div>
-  </div>
+
 
   </div>
  </ul>

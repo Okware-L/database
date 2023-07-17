@@ -2,6 +2,7 @@
 
 import React, {useState} from 'react'
 import Feed from './Feed';
+import Leftbar from './Leftbar';
 
 
 
@@ -14,10 +15,10 @@ export default function Hero() {
       <Feed/>
     </section>
 
-            {/**left section */} 
-            <section className='p-5 grid-row sm:basis-0 col-span-2 bg-base-200 m-2 hidden lg:block'>
-               sidebar
-            </section>
+      {/**left section */} 
+     <section className='sm:basis-0 col-span-2 m-2 hidden lg:block'>
+       <Leftbar/>
+    </section>
         
     </div>
   )
