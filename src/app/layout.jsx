@@ -1,6 +1,6 @@
 "use client"
 
-import { AuthContextProvider } from '@/context/AuthContext'
+//import { AuthContextProvider } from '@/context/AuthContext'
 import './globals.css'
 import { Inter } from 'next/font/google'
 import { ThirdwebProvider, paperWallet, metamaskWallet, localWallet, coinbaseWallet } from "@thirdweb-dev/react";
@@ -24,11 +24,9 @@ export default function RootLayout({ children }) {
      localWallet()
     ]}
     >
-    <AuthContextProvider>
     <html lang="en">
       <body className={inter.className}>{children}</body>
     </html>
-    </AuthContextProvider>
     </ThirdwebProvider>
   )
 }

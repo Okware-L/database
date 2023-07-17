@@ -1,8 +1,8 @@
 "use client"
 
 import React, {useState} from 'react'
-import UniversityList from '@/components/UniversityList'
-import UniversityForm from '@/components/UniversityForm';
+import UniversityList from '../../components/UniversityList'
+import UniversityForm from '../../components/UniversityForm';
 
   export default function Tasks() {
 
