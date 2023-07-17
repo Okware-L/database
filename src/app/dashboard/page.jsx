@@ -27,7 +27,7 @@ export default function Dashboard() {
    </label>
    </div>
 
-<div class="flex -space-x-2 mx-1">
+<div class="flex -space-x-2 mx-1 sm:hidden">
   
     <Image class="w-7 h-7 border-2 border-white rounded-full dark:border-gray-800" src={User} alt=""/>
     <Image class="w-7 h-7 border-2 border-white rounded-full dark:border-gray-800" src={User} alt=""/>
@@ -43,7 +43,7 @@ export default function Dashboard() {
   </div> 
   <div className="drawer-side">
     <label htmlFor="my-drawer-2" className="drawer-overlay"></label> 
-    <div>
+    <div className=''>
       {/* Sidebar content here */}
       <Sidebar/>
     </div>
