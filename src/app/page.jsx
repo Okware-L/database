@@ -8,18 +8,22 @@ import SignIn from "./signin/page";
 
 export default function Home() {
 
-  const address = useAddress();
+  //const address = useAddress();
 
   
   return (
   <main>
-    {!address ? (
+  {/**
+   * {!address ? (
       <div className="">
      <SignIn/>
       </div>
       ) : (
       <Dashboard/>
       )}
+   * 
+   */} 
+   <Dashboard/>
   </main>
   )
 }

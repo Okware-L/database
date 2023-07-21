@@ -29,8 +29,17 @@ const Leftbar = () => {
     <div className='bg-base-200 my-2'>
         <h2 className='p-2 flex justify-center'>Buy Crypto</h2>
     </div>
+    <div>
+    </div>
     </div>
   )
 }
 
 export default Leftbar
+
+
+
+
+///arrow > 
+
+//why you aer buying , what is jm . or buy then arrow 
