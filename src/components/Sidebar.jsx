@@ -36,16 +36,6 @@ const sidebar = () => {
     </a>
   </li>
   <li className='my-1'>
-    <a>
-        <Image
-        src= {Comm}
-        alt=''
-        className="h-5 w-5"
-        />
-    Community
-    </a>
-  </li>
-  <li className='my-1'>
     <Link href='/tasks'>
         <Image
         src= {Market}
