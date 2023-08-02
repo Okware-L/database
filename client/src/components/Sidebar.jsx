@@ -12,7 +12,7 @@ import Link from 'next/link'
 
 const sidebar = () => {
   return (
-    <div className='menu p-4 w-70 h-full bg-base-200 text-base-content scroll-auto'>
+    <div className='menu p-4 w-70 h-screen bg-base-200 text-base-content scroll-auto'>
     <div className='flex p-2'>
     <div className="avatar w-24 ">
      <Image
@@ -114,33 +114,7 @@ const sidebar = () => {
       <p className='text-xs'>#explore</p>
     </div>
   </div>
-
-
-  <div className="divider"></div> 
-  {/**Events section */}
-
-    <h2 className='font-bold'>Events</h2>
-
-    {/**first event */}
-    <div className='flex p-2'>
-   <div className='flex flex-col bg-base-100 p-3 rounded-full'>
-      <p className='ml-1'>
-        20
-      </p>
-      <p>
-        Dec
-      </p>
-   </div>
-    <div className='flex flex-col mx-4 justify-center'>
-      <h2>Title</h2>
-      <p>Description</p>
-    </div>
-  </div>
-
-
-  {/**second event */}
-
-
+  
   </div>
  </ul>
 </div>
